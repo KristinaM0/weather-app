@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Sora:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+  <div class="container header">
+    <form id="search-form">
+      <input type="text" placeholder="Enter a city" class="alert-secondary" id="city-input" />
+      <input type="submit" value="Search" class="alert-warning" />
+      <input type="submit" value="Current location" class="alert-warning" id="current-location-button" />
+    </form>
+  </div>
+  <div class="container city">
+    <h1 id="city">London</h1>
+    <ul>
+      <li id="date"></li>
+    </ul>
+  </div>
+  <div class="container temperature">
+    <span id="temperature" </span>
+    </span class="units">C°</span>
+  </div>
+  <div class="container forecast">
+    <div class="row">
+      <div class="col-2">
+        <h5>Monday</h5>
+        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
+      </div>
+      <div class="col-2">
+        <h5>Tuesday</h5>
+        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
+      </div>
+      <div class="col-2">
+        <h5>Wednesday</h5>
+        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
+      </div>
+      <div class="col-2">
+        <h5>Thursday</h5>
+        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
+      </div>
+      <div class="col-2">
+        <h5>Friday</h5>
+        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
+      </div>
+      <div class="col-2">
+        <h5>Saturday</h5>
+        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    Coded by Kristina Mocilenkova
+  </footer>
+  <script src="src/script.js">
+  </script>
+</body>
+
+</html>
