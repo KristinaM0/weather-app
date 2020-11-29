@@ -53,6 +53,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     celsiusTemperature
   );
+  document.querySelector("#description").innerHTML = response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -62,10 +63,9 @@ function displayWeatherCondition(response) {
   );
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
-    "scr",
+    "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-}
 
 function showFahTemperature(event) {
   event.preventDefault();
@@ -86,4 +86,4 @@ let fLink = document.querySelector("#f-link");
 fLink.addEventListener("click", showFahTemperature);
 
 let cLink = document.querySelector("#c-link");
-cLink = addEventListenet("click", showCelTemperature);
+cLink = addEventListener("click", showCelTemperature);
