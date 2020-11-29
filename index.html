@@ -12,8 +12,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="src/style.css" />
 </head>
-
 <body>
+  <div class="wrapper">
   <div class="container header">
     <form id="search-form">
       <input type="text" placeholder="Enter a city" class="alert-secondary" id="city-input" />
@@ -21,47 +21,41 @@
       <input type="submit" value="Current location" class="alert-warning" id="current-location-button" />
     </form>
   </div>
-  <div class="container city">
+  <div class="city">
     <h1 id="city">London</h1>
     <ul>
       <li id="date"></li>
-    </ul>
-  </div>
-  <div class="container temperature">
-    <span id="temperature" </span>
-    </span class="units">C°</span>
-  </div>
-  <div class="container forecast">
+      </ul>
     <div class="row">
-      <div class="col-2">
-        <h5>Monday</h5>
-        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
-      </div>
-      <div class="col-2">
-        <h5>Tuesday</h5>
-        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
-      </div>
-      <div class="col-2">
-        <h5>Wednesday</h5>
-        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
-      </div>
-      <div class="col-2">
-        <h5>Thursday</h5>
-        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
-      </div>
-      <div class="col-2">
-        <h5>Friday</h5>
-        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
-      </div>
-      <div class="col-2">
-        <h5>Saturday</h5>
-        <p> 🌤 </br> <span class="bold"> 13C°</span> </p>
-      </div>
+    <div class="col-6">
+  <div class="temperature clearfix">
+    <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="Clear" width="100px"id="icon" class="float-left" />
+    <span id="temperature" class="temperature-icon" class="float-left"></span>
+<span class="units"> C° |  F </span>
+</div>
+</div>
+    <div class="col-6">
+      <div class="list float-left">
+      <ul>
+        <li>
+          Precipitation: <span id="precipitation"> </span>%
+        </li>
+        <li>
+          Humidity: <span id="humidity">%</span>
+        </li>
+        <li>
+          Wind: <span id="wind">km/h</span>
+        </li>
+      </ul>
+    </div>
+    </div>
     </div>
   </div>
+</div>
   <footer>
     <a href="https://github.com/KristinaM0/weather-app"target="_blank">Open-source code</a> by Kristina Mocilenkova
   </footer>
+  </div>
   <script src="src/script.js">
   </script>
 </body>

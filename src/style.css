@@ -1,32 +1,28 @@
-body {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400px;
-  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
-}
-
 h1 {
   font-weight: bolder;
   color: rgb(213, 113, 73);
   font-size: 50px;
   margin-bottom: 0px;
 }
-#date {
-  font-size: 20px;
-  color: rgb(232, 159, 113);
-  list-style: none;
-  padding: 0px;
-}
 
 ul {
   margin: 0px;
   padding: 5px;
+  list-style: none;
 }
 footer {
   text-align: center;
-  bottom: 0px;
   width: 100%;
   font-family: "Quicksand", sans-serif;
-  padding: 50px 50px;
+}
+.wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 10px 40px 40px;
+  border: 1px solid rgb(213, 113, 73);
+  border-radius: 20px;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  font-family: "Quicksand", sans-serif;
 }
 .header {
   padding: 50px 10px;
@@ -37,11 +33,31 @@ footer {
   text-align: center;
   color: rgb(213, 113, 73);
 }
-.bold {
-  color: rgb(78, 56, 48);
+.temperature-icon {
+  font-weight: bolder;
+  font-size: 60px;
 }
 .temperature {
-  padding: 0px 30px;
-  font-size: 40px;
+  padding: 0px 20px;
+  font-size: 30px;
   color: rgb(213, 113, 73);
+  margin-top: 20px;
+}
+.units {
+  position: relative;
+  font-size: 20px;
+  top: -28px;
+}
+.list {
+  font-size: 20px;
+  color: rgb(232, 159, 113);
+  list-style: none;
+  padding: 0px 15px;
+  margin-top: 20px;
+}
+
+#date {
+  font-size: 20px;
+  color: rgb(232, 159, 113);
+  list-style: none;
 }
