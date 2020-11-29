@@ -18,7 +18,7 @@ footer {
 .wrapper {
   max-width: 600px;
   margin: 50px auto;
-  padding: 10px 40px 40px;
+  padding: 20px 40px 40px;
   border: 1px solid rgb(213, 113, 73);
   border-radius: 20px;
   background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
@@ -35,7 +35,7 @@ footer {
 }
 .temperature-icon {
   font-weight: bolder;
-  font-size: 60px;
+  font-size: 50px;
 }
 .temperature {
   padding: 0px 20px;
@@ -45,8 +45,8 @@ footer {
 }
 .units {
   position: relative;
-  font-size: 20px;
-  top: -28px;
+  font-size: 18px;
+  top: -20px;
 }
 .list {
   font-size: 20px;
