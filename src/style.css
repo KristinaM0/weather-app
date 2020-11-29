@@ -65,3 +65,19 @@ footer {
   color: rgb(232, 159, 113);
   list-style: none;
 }
+
+#f-link {
+  color: rgb(232, 159, 113);
+}
+
+#c-link {
+  color: rgb(232, 159, 113);
+}
+#f-link:hover {
+  text-decoration: none;
+  color: rgb(213, 113, 73);
+}
+#c-link:hover {
+  text-decoration: none;
+  color: rgb(213, 113, 73);
+}
