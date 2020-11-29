@@ -49,15 +49,19 @@ footer {
   top: -20px;
 }
 .list {
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(232, 159, 113);
   list-style: none;
   padding: 0px 15px;
   margin-top: 20px;
 }
+.last-update {
+  font-size: 16px;
+  color: rgb(232, 159, 113);
+}
 
 #date {
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(232, 159, 113);
   list-style: none;
 }
