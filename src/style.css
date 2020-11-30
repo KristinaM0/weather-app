@@ -60,7 +60,17 @@ footer {
   color: rgb(232, 159, 113);
 }
 
+li:first-letter {
+  text-transform: capitalize;
+}
+
 #date {
+  font-size: 16px;
+  color: rgb(232, 159, 113);
+  list-style: none;
+}
+
+#description {
   font-size: 16px;
   color: rgb(232, 159, 113);
   list-style: none;

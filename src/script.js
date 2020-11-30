@@ -11,6 +11,9 @@ let days = [
 let day = days[now.getDay()];
 let hour = now.getHours();
 let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 
 let ul = document.querySelector("#date");
 ul.innerHTML = `${day} ${hour}:${minutes}`;
@@ -18,7 +21,27 @@ ul.innerHTML = `${day} ${hour}:${minutes}`;
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-//
+function displayWeatherCondition(response) {
+  celsiusTemperature = response.data.main.temp;
+  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#temperature").innerHTML = Math.round(
+    celsiusTemperature
+  );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#feels-like").innerHTML = Math.round(
+    response.data.main.feels_like
+  );
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+}
 
 function search(city) {
   let apiKey = "768d5798d6d791324557e57ef0abc21e";
@@ -46,26 +69,6 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 search("London");
-
-function displayWeatherCondition(response) {
-  celsiusTemperature = response.data.main.temp;
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    celsiusTemperature
-  );
-  document.querySelector("#description").innerHTML = response.data.weather[0].description;
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
-  document.querySelector("#feels-like").innerHTML = Math.round(
-    response.data.main.feels_like
-  );
-  let iconElement = document.querySelector("#icon");
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
 
 function showFahTemperature(event) {
   event.preventDefault();
