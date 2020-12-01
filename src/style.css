@@ -18,10 +18,11 @@ footer {
 .wrapper {
   max-width: 600px;
   margin: 50px auto;
+  margin-bottom: 5px;
   padding: 20px 40px 40px;
-  border: 1px solid rgb(213, 113, 73);
+  border: 1px solid rgb(232, 159, 113);
   border-radius: 20px;
-  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   font-family: "Quicksand", sans-serif;
 }
 .header {
@@ -49,15 +50,15 @@ footer {
   top: -20px;
 }
 .list {
-  font-size: 16px;
-  color: rgb(232, 159, 113);
+  font-size: 20px;
+  color: rgb(213, 113, 73);
   list-style: none;
   padding: 0px 15px;
   margin-top: 20px;
 }
 .last-update {
   font-size: 16px;
-  color: rgb(232, 159, 113);
+  color: rgb(230, 155, 109);
 }
 
 li:first-letter {
@@ -72,7 +73,7 @@ li:first-letter {
 
 #description {
   font-size: 16px;
-  color: rgb(232, 159, 113);
+  color: rgb(230, 155, 109);
   list-style: none;
 }
 

@@ -23,7 +23,7 @@ searchForm.addEventListener("submit", handleSubmit);
 
 function displayWeatherCondition(response) {
   celsiusTemperature = response.data.main.temp;
-  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#city").innerHTML = response.data.name.trim();
   document.querySelector("#temperature").innerHTML = Math.round(
     celsiusTemperature
   );
@@ -89,4 +89,4 @@ let fLink = document.querySelector("#f-link");
 fLink.addEventListener("click", showFahTemperature);
 
 let cLink = document.querySelector("#c-link");
-cLink = addEventListener("click", showCelTemperature);
+cLink.addEventListener("click", showCelTemperature);
